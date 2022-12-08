@@ -46,6 +46,22 @@ module.exports = {
                 res.status(500).json(err);
             });
     },
+    updateUser(req, res) {
+        User.findOneAndUpdate(
+            { _id: req.params.userId },
+            req.body,
+            { new: true }
+        )
+            .then((user) =>
+                !user
+                    ? res.status(404).json({ message: 'No such user exists' })
+                    : res.json({ message: 'User successfully updated' })
+            )
+            .catch((err) => {
+                console.log(err);
+                res.status(500).json(err);
+            });
+    },
     addFriend(req, res) {
         User.findOneAndUpdate(
             { _id: req.params.userId },
