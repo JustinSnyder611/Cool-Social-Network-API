@@ -5,9 +5,9 @@
 I wanted to create this project so I can see what it would be like to create a social media website on the scale of facebook or twitter.
 I learned that compared to SQL, mongoDB is way easier to use when it comes to projects like this.
 
-## Table of Contents (Optional)
+## Table of Contents
 
-Link to video:
+Link to video: https://drive.google.com/file/d/1NZHH5Cwz7vMjzooKpeCb9P2VcP5OPc2E/view?usp=share_link
 
 - [Installation](#installation)
 - [Usage](#usage)
